@@ -1,0 +1,25 @@
+# V2
+
+XGB used to get 0.726
+xgb0 = XGBRegressor( # the one which scored 0.7268 (submission0)
+    objective="survival:cox",
+    eval_metric="cox-nloglik",
+    n_estimators=369,
+    max_depth=3,
+    learning_rate=0.0197,
+    subsample=0.432,
+    colsample_bytree=0.661,
+    random_state=seed,
+)
+
+
+XGB:
+Best trial: 98. Best value: 0.724889: 100%|███████████████████████████████████████████| 100/100 [04:26<00:00,  2.67s/it]
+Best Parameters: {'learning_rate': 0.014094933587462562, 'n_estimators': 709, 'max_depth': 4, 'subsample': 0.6449286156179819, 'colsample_bytree': 0.6934003374682716, 'min_child_weight': 5, 'gamma': 1.8423380423563593, 'reg_alpha': 4.383131553053946, 'reg_lambda': 7.940353468232698, 'colsample_bylevel': 0.6109158700522656, 'colsample_bynode': 0.554871832896529}
+
+Best trial: 80. Best value: 0.726019: 100%|███████████████████████████████████████████| 100/100 [04:16<00:00,  2.56s/it]
+Best Parameters: {'learning_rate': 0.009580740300707338, 'n_estimators': 926, 'max_depth': 4, 'subsample': 0.4963788405587179, 'colsample_bytree': 0.5252604348856715, 'min_child_weight': 9, 'gamma': 1.3920750660904169, 'reg_alpha': 1.75280465171629, 'reg_lambda': 3.2936539116473154, 'colsample_bylevel': 0.8191916279099476, 'colsample_bynode': 0.41314094137602947}
+
+
+RSF:
+Best Parameters: {'n_estimators': 697, 'min_samples_split': 13, 'min_samples_leaf': 7, 'max_features': 0.5980189167826496, 'max_depth': 16, 'max_samples': 0.3953534489540212}
