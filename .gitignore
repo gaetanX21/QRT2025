@@ -3,3 +3,4 @@ submissions/
 results/
 *.pyc
 *.ipynb
+.gitignore
