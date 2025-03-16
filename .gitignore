@@ -1,8 +1,0 @@
-old/
-submissions/
-results/
-*.pyc
-*.ipynb
-*.txt
-.tex
-.gitignore
