@@ -137,11 +137,8 @@ def plot_PI_xgb(model, X: pd.DataFrame, y: np.ndarray, y_xgb: np.ndarray, n_repe
     # plot the importances
     fig, ax = plt.subplots(figsize=(6,4), dpi=200)
     results_df['importances_mean'].plot.barh(yerr=results_df['importances_std'], ax=ax)
-    model_name = model.__class__.__name__
-    ax.set_title(f"Permutation Importances ({model_name})")
+    ax.set_title("Feature Importance (permutation)")
     ax.set_xlabel("Mean Importance")
-    ax.set_ylabel("Feature")
-    time = datetime.datetime.now()
-    fname = f"{model_name}_{time.strftime('%m-%d_%H:%M')}"
-    plt.savefig(f"img/permutation_importance_xgb_{fname}.png", dpi=200, bbox_inches='tight')
-    plt.close()
+    ax.set_ylabel("Features")
+    plt.savefig(f"img/feature_importance_xgb_permutation.png", dpi=200, bbox_inches='tight')
+    plt.show()

@@ -1,13 +1,9 @@
-# OPTUNA
+"""
+Script to perform hyperparameter optimization for XGBoost using Optuna.
+"""
+
 import optuna
 import xgboost as xgb
-import pandas as pd
-import numpy as np
-from sksurv.metrics import concordance_index_ipcw
-from sklearn.impute import SimpleImputer
-from sklearn.preprocessing import PowerTransformer
-from sklearn.model_selection import KFold
-from sksurv.util import Surv
 import datetime
 import argparse
 

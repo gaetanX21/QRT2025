@@ -1,6 +1,8 @@
-# OPTUNA
+"""
+Script to optimize hyperparameters of Random Survival Forest using Optuna.
+"""
+
 import optuna
-import xgboost as xgb
 from sksurv.ensemble import RandomSurvivalForest
 import datetime
 import argparse
