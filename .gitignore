@@ -4,4 +4,5 @@ results/
 *.pyc
 *.ipynb
 *.txt
+.tex
 .gitignore
